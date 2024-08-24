@@ -32,9 +32,9 @@ src/
 ├── main/
 │   ├── java/com/booknow/
 │   │   ├── controller/    # Controladores REST
-│   │   ├── model/         # Modelos e entidades JPA
-│   │   ├── repository/    # Repositórios JPA
-│   │   ├── service/       # Serviços de negócio
+│   │   ├── DTO/         # DATA Transfrer Object
+│   │   ├── Livro/    # Clase do livro e arquivos de imagem e do livro
+│   │   ├── Repository/     # Repository JPA
 │   │   └── BookNowServiceApplication.java  # Classe principal do Spring Boot
 │   └── resources/
 │       ├── application.properties  # Configurações da aplicação

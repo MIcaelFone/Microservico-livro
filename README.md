@@ -40,6 +40,17 @@ src/
 │       ├── application.properties  # Configurações da aplicação
 │       └── db/migration/           # Migrations do Flyway
 └── test/
-    └── java/com/booknow/           # Testes unitários e de integração    
-``´
-🛠️ Configuração do Ambiente
+    └── java/com/booknow/           # Testes unitários e de integração
+```bash
+ddddddddd
+
+
+
+
+
+
+
+
+dddddddddddd
+
+

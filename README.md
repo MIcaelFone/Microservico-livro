@@ -41,4 +41,5 @@ src/
 │       └── db/migration/           # Migrations do Flyway
 └── test/
     └── java/com/booknow/           # Testes unitários e de integração    
-## 🛠️ Configuração do Ambiente
+``´
+🛠️ Configuração do Ambiente

@@ -41,16 +41,12 @@ src/
 │       └── db/migration/           # Migrations do Flyway
 └── test/
     └── java/com/booknow/           # Testes unitários e de integração
-```bash
-ddddddddd
-
-
-
-
-
-
-
-
-dddddddddddd
+```
+## 🛠️ Configuração do Ambiente
+<ul>
+    <li>JDK 17 ou superior</li>
+    <li> Maven 3.8+</Li>
+   <li>  MySQL 8.0+ </li>
+</ul>
 
 

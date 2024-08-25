@@ -48,7 +48,7 @@ src/
     <li> Maven 3.8+</Li>
    <li>  MySQL 8.0+ </li>
 </ul>
-<h1>Configurações do Banco de Dados</h1>
+<h3>Configurações do Banco de Dados</h3>
 <p>Certifique-se de ter um banco de dados MySQL configurado com as seguintes credenciais:</p>
 
 ```bash

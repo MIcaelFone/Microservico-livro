@@ -56,6 +56,5 @@ spring.datasource.username=root
 spring.datasource.password=your_password
 spring.jpa.hibernate.ddl-auto=none
 spring.flyway.baseline-on-migrate=true
-
 ```
 

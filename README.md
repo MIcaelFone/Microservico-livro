@@ -48,5 +48,14 @@ src/
     <li> Maven 3.8+</Li>
    <li>  MySQL 8.0+ </li>
 </ul>
+<h1>Configurações do Banco de Dados</h1>
+<p>Certifique-se de ter um banco de dados MySQL configurado com as seguintes credenciais:</p>
+```bash
+spring.datasource.url=jdbc:mysql://localhost:3306/livraria
+spring.datasource.username=root
+spring.datasource.password=your_password
+spring.jpa.hibernate.ddl-auto=none
+spring.flyway.baseline-on-migrate=true
 
+```
 

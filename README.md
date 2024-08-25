@@ -58,3 +58,28 @@ spring.datasource.password=your_password
 spring.jpa.hibernate.ddl-auto=none
 spring.flyway.baseline-on-migrate=true
 ```
+## Executando o projeto
+<p>CLonar projeto</p>
+
+```bash
+git clone https://github.com/seu-usuario/booknow-livro-service.git
+cd BookNow-Service
+```
+<p>Configure as propriedades da aplicação no application.properties.</p>
+<p>Execute as migrations do banco de dados:</p>
+
+```bash
+Copiar código
+mvn flyway:migrate
+Inicie a aplicação:
+```
+<p>Inicie a aplicação:</p>
+
+```bash
+mvn spring-boot:run
+```
+<p>A aplicação estará disponível em http://localhost:8000.</p>
+
+
+
+

@@ -87,9 +87,7 @@ cd BookNow-Service
 <p>Execute as migrations do banco de dados:</p>
 
 ```bash
-Copiar código
 mvn flyway:migrate
-Inicie a aplicação:
 ```
 <p>Inicie a aplicação:</p>
 

@@ -17,6 +17,24 @@ Um microserviço desenvolvido em Spring Boot que gerencia um catálogo de livros
 - **MySQL**: Banco de dados relacional utilizado para armazenar as informações dos livros.
 - **Flyway**: Controle de versionamento do banco de dados.
 - **HikariCP**: Pool de conexões para melhorar o desempenho de acesso ao banco de dados.
+- 
+## Dependências Usadas
+<ul>
+    <li><strong>Spring Boot Starter Data JDBC</strong></li>
+    <li><strong>Spring Boot Starter Data JPA</strong></li>
+    <li><strong>Spring Boot Starter Data REST</strong></li>
+    <li><strong>Spring Boot Starter JDBC</strong></li>
+    <li><strong>Spring Boot Starter Validation</strong></li>
+    <li><strong>Spring Boot Starter Web</strong></li>
+    <li><strong>Flyway Core</strong></li>
+    <li><strong>Flyway MySQL</strong></li>
+    <li><strong>Spring Cloud Netflix Eureka Server</strong></li>
+    <li><strong>Spring Cloud Netflix Eureka Client</strong></li>
+    <li><strong>MySQL Connector/J</strong></li>
+    <li><strong>Lombok</strong></li>
+    <li><strong>Spring Boot Starter Test</strong></li>
+    <li><strong>Spring Cloud Dependencies</strong></li>
+</ul>
 
 ## 🚀 Funcionalidades
 

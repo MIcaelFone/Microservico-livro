@@ -17,7 +17,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/livros")
-@Tag(name="Livros",description="a Api de Livros")
+@Tag(name="Livros",description="API de Livros")
 public class LivrosController {
 
     @Autowired

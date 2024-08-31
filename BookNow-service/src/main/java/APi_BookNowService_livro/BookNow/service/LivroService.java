@@ -26,6 +26,7 @@ public class LivroService {
         livro.atualiza(dados);
     }
     @Transactional
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deletarDados(Long id){
         repository.deleteById(id);
     }

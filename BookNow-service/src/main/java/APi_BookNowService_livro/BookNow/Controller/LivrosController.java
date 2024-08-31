@@ -45,4 +45,9 @@ public class LivrosController {
     public void deletar(@PathVariable long id){
         servico.deletarDados(id);
     }
+
+    @GetMapping("/teste")
+    public String helloWorld() {
+        return "Hello World";
+    }
 }

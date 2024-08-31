@@ -41,15 +41,17 @@ public class LivroClasse {
 
 
     public void atualiza(DadosAtualizarLivros dados) {
-
         if(dados.nome()!=null){
             this.nome=dados.nome();
         }
-        else if(dados.descricao()!=null){
+        if(dados.descricao()!=null){
             this.descricao=dados.descricao();
         }
-        else if(dados.arquivos()!=null){
+        if(dados.arquivos()!=null){
             this.arquivos=dados.arquivos();
+        }
+        if(dados.pontos()!=null) {
+            this.pontos=dados.pontos();
         }
     }
 }

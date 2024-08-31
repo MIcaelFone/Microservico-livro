@@ -1,4 +1,4 @@
-package APi_BookNowService_livro.BookNow.service;
+package APi_BookNowService_livro.BookNow;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -17,7 +17,7 @@ Um microserviço desenvolvido em Spring Boot que gerencia um catálogo de livros
 - **MySQL**: Banco de dados relacional utilizado para armazenar as informações dos livros.
 - **Flyway**: Controle de versionamento do banco de dados.
 - **HikariCP**: Pool de conexões para melhorar o desempenho de acesso ao banco de dados.
-- 
+  
 ## Dependências Usadas
 <ul>
     <li><strong>Spring Boot Starter Data JDBC</strong></li>

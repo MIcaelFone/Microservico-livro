@@ -112,5 +112,5 @@ mvn flyway:migrate
 ```bash
 mvn spring-boot:run
 ```
-<p>A aplicação estará disponível em http://localhost:8000.</p>
+### Para acessar o swagger da API <code>http://localhost:8000/swagger-ui.html</code>
  

@@ -50,10 +50,13 @@ Um microserviço desenvolvido em Spring Boot que gerencia um catálogo de livros
 src/
 ├── main/
 │   ├── java/com/booknow/
+│   │   ├── config/   # Configuração do cors
 │   │   ├── controller/    # Controladores REST
 │   │   ├── DTO/         # DATA Transfrer Object
+│   │   ├── model/   #  Modelos de classes 
 │   │   ├── Livro/    # Clase do livro e arquivos de imagem e do livro
 │   │   ├── Repository/     # Repository JPA
+│   │   ├── Service/     #  lógica de negócios da aplicação
 │   │   └── BookNowServiceApplication.java  # Classe principal do Spring Boot
 │   └── resources/
 │       ├── application.properties  # Configurações da aplicação
@@ -71,11 +74,22 @@ src/
 <p>Certifique-se de ter um banco de dados MySQL configurado com as seguintes credenciais:</p>
 
 ```bash
-spring.datasource.url=jdbc:mysql://localhost:3306/livraria
+spring.application.name=BookNow-service-Livro
+spring.config.import=optional:configserver:
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.url=jdbc:mysql://localhost:${PORT_DB_BOOK}/${LIVRO_DATABASE}
 spring.datasource.username=root
-spring.datasource.password=your_password
+spring.datasource.password=${BOOK_DB_PASSWORD}
+spring.flyway.baseline-on-migrate=false
 spring.jpa.hibernate.ddl-auto=none
-spring.flyway.baseline-on-migrate=true
+server.port=${BOOK_SERVER_PORT}
+spring.flyway.enabled=false
+eureka.client.serviceUrl.defaultZone=http://localhost:${BOOK_SERVER_EUREKA}/eureka
+eureka.instance.preferIpAddress=true
+springdoc.api-docs.path=/api-docs
+springdoc.swagger-ui.path=/swagger-ui.html
+spring.jpa.hibernate.naming.physical-strategy=org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 ```
 ## Executando o projeto
 <p>CLonar projeto</p>

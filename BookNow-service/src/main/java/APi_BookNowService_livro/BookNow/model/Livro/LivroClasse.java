@@ -17,23 +17,29 @@ import java.util.Date;
 @Builder
 public class LivroClasse {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private String nome;
+    @Column(name="idLivros")
+    private Long idLivro;
+    @Column(name="NomeLivro",unique = true)
+    private String NomeLivro;
+    @Column(name = "descricao")
     private String descricao;
-    private String classificacao_livro;
-    private String autor;
-    private Date datapublicacao;
+    @Column(name = "Autor")
+    private String Autor;
+    @Column(name = "dataPublicacao")
+    private Date dataPublicacao;
+    @Column(name = "classificacaoLivro")
+    private String classificacaoLivro;
     @Embedded
     private ArquivosLivro arquivos;
     private Integer pontos;
 
     public LivroClasse(DadosCadastrarLivros dados) {
-        this.id=dados.id();
-        this.nome=dados.nome();
+        this.idLivro=dados.idLivro();
+        this.NomeLivro=dados.NomeLivro();
         this.descricao=dados.descricao();
-        this.classificacao_livro=dados.classificacao_livro();
-        this.autor=dados.autor();
-        this.datapublicacao=dados.datapublicacao();
+        this.classificacaoLivro=dados.classificacaoLivro();
+        this.Autor=dados.Autor();
+        this.dataPublicacao=dados.dataPublicacao();
         this.arquivos=dados.arquivos();
         this.pontos=dados.pontos();
     }
@@ -42,7 +48,7 @@ public class LivroClasse {
 
     public void atualiza(DadosAtualizarLivros dados) {
         if(dados.nome()!=null){
-            this.nome=dados.nome();
+            this.NomeLivro=dados.nome();
         }
         if(dados.descricao()!=null){
             this.descricao=dados.descricao();

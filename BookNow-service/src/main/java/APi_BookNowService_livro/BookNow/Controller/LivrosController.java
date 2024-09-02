@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/livro")
+@RequestMapping("/livros")
 @Tag(name="Livros",description="API de Livros")
 public class LivrosController {
 
@@ -54,8 +54,4 @@ public class LivrosController {
         servico.deletarDados(id);
     }
 
-    @GetMapping("/teste")
-    public String helloWorld() {
-        return "Hello World";
-    }
 }

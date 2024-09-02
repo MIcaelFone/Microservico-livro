@@ -92,10 +92,10 @@ spring.jpa.hibernate.naming.physical-strategy=org.hibernate.boot.model.naming.Ph
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 ```
 #### Descrição: Configurações de conexão com o banco de dados MySQL.
-- **spring.datasource.driver-class-name: Define o driver JDBC para MySQL.**
-spring.datasource.url: URL de conexão com o banco de dados. Use variáveis de ambiente ${PORT_DB_BOOK} para a porta e ${LIVRO_DATABASE} para o nome do banco de dados.
-spring.datasource.username: Nome de usuário para a conexão com o banco de dados.
-spring.datasource.password: Senha para a conexão com o banco de dados.
+- **spring.datasource.driver-class-name**: Define o driver JDBC para MySQL.
+- **spring.datasource.url**: URL de conexão com o banco de dados. Use variáveis de ambiente ${PORT_DB_BOOK} para a porta e ${LIVRO_DATABASE} para o nome do banco de dados.
+- **spring.datasource.username**: Nome de usuário para a conexão com o banco de dados.
+- **spring.datasource.password**: Senha para a conexão com o banco de dados.
 ## Executando o projeto
 <p>CLonar projeto</p>
 

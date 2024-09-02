@@ -1,8 +1,6 @@
 package APi_BookNowService_livro.BookNow.DTO;
 import APi_BookNowService_livro.BookNow.model.Arquivos.ArquivosLivro;
 import APi_BookNowService_livro.BookNow.model.Livro.LivroClasse;
-import jakarta.persistence.Column;
-import jakarta.persistence.Embedded;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 

@@ -15,8 +15,6 @@ Um microserviço desenvolvido em Spring Boot que gerencia um catálogo de livros
 - **Spring Boot 3.3.3**: Framework para a criação de microserviços em Java.
 - **Spring Data JPA**: Para persistência e acesso aos dados no banco de dados.
 - **MySQL**: Banco de dados relacional utilizado para armazenar as informações dos livros.
-- **Flyway**: Controle de versionamento do banco de dados.
-- **HikariCP**: Pool de conexões para melhorar o desempenho de acesso ao banco de dados.
   
 ## Dependências Usadas
 <ul>

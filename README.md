@@ -28,7 +28,8 @@ Um microserviço desenvolvido em Spring Boot que gerencia um catálogo de livros
     <li><strong>Spring Boot Starter Web</strong></li>
     <li><strong>Flyway Core</strong></li>
     <li><strong>Flyway MySQL</strong></li>
-    <li><strong>Spring Cloud Netflix Eureka Server</strong></li>
+    <li><strong>Springdoc OpenAPI Starter WebMVC UI (springdoc-openapi-starter-webmvc-ui)</strong></li>
+    <li><strong>Swagger Annotations (swagger-annotations)</strong></li>
     <li><strong>Spring Cloud Netflix Eureka Client</strong></li>
     <li><strong>MySQL Connector/J</strong></li>
     <li><strong>Lombok</strong></li>

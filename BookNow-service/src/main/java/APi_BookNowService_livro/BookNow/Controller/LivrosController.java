@@ -2,6 +2,7 @@ package APi_BookNowService_livro.BookNow.Controller;
 import APi_BookNowService_livro.BookNow.DTO.DadosAtualizarLivros;
 import APi_BookNowService_livro.BookNow.DTO.DadosCadastrarLivros;
 import APi_BookNowService_livro.BookNow.Repository.LivrosRepository;
+import APi_BookNowService_livro.BookNow.model.Livro.LivroClasse;
 import APi_BookNowService_livro.BookNow.service.LivroService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -11,6 +12,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/livros")
@@ -52,6 +54,13 @@ public class LivrosController {
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deletar(@PathVariable long id){
         servico.deletarDados(id);
+    }
+
+    @Operation(summary = "Obter livro",description = " Obter o livro  através de um ID")
+    @GetMapping("/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public Optional<LivroClasse> obterLivro(@PathVariable long id){
+        return servico.obterLivro(id);
     }
 
 }

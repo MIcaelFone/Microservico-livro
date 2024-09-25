@@ -8,6 +8,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="demo" />
+        <module name="bookNowAvaliacao" />
+        <module name="pontos" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -17,7 +19,9 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="BookNow-service" options="-parameters" />
+      <module name="bookNowAvaliacao" options="-parameters" />
       <module name="demo" options="-parameters" />
+      <module name="pontos" options="-parameters" />
     </option>
   </component>
 </project>

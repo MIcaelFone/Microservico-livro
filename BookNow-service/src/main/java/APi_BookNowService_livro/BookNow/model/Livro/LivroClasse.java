@@ -15,6 +15,7 @@ import java.util.Date;
 @NoArgsConstructor
 @EqualsAndHashCode(of="id")
 @Builder
+@Data
 public class LivroClasse {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="idLivros")
@@ -43,8 +44,6 @@ public class LivroClasse {
         this.arquivos=dados.arquivos();
         this.pontos=dados.pontos();
     }
-
-
 
     public void atualiza(DadosAtualizarLivros dados) {
         if(dados.nome()!=null){

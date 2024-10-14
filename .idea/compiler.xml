@@ -7,8 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="demo" />
+        <module name="apigateway" />
         <module name="bookNowAvaliacao" />
+        <module name="registra" />
+        <module name="usuario" />
+        <module name="demo" />
         <module name="pontos" />
       </profile>
     </annotationProcessing>
@@ -19,9 +22,12 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="BookNow-service" options="-parameters" />
+      <module name="apigateway" options="-parameters" />
       <module name="bookNowAvaliacao" options="-parameters" />
       <module name="demo" options="-parameters" />
       <module name="pontos" options="-parameters" />
+      <module name="registra" options="-parameters" />
+      <module name="usuario" options="-parameters" />
     </option>
   </component>
 </project>

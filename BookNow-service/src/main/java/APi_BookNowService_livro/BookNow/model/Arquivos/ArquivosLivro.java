@@ -10,7 +10,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class ArquivosLivro {
+public class  ArquivosLivro {
     private String imagem;
     private String ebook;
 

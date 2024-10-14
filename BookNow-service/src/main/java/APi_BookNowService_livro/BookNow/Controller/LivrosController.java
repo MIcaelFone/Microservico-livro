@@ -22,8 +22,8 @@ public class LivrosController {
     @Autowired
     private LivrosRepository repository;
     @Autowired
-
     private LivroService servico;
+
 
     @PostMapping
     @Operation(summary = "Criar livro" ,description = "Cria um livro")
@@ -41,7 +41,7 @@ public class LivrosController {
     @Operation(summary = "Teste de endpoint", description = "Endpoint de teste")
     @ResponseStatus(HttpStatus.OK)
     public String teste() {
-        return "Hello";
+       return "teste";
     }
     @Operation(summary = "Atualizar livro",description = "Atualiza o nome,descricao,arquivos,e pontos de um livro cadastrado através de um ID")
     @PutMapping("/{id}")

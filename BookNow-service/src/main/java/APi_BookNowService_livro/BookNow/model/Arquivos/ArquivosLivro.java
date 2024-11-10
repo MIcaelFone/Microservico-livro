@@ -3,7 +3,10 @@ package APi_BookNowService_livro.BookNow.model.Arquivos;
 import APi_BookNowService_livro.BookNow.DTO.DadosCadastrarArquivos;
 import jakarta.persistence.Embeddable;
 import jakarta.validation.Valid;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Embeddable
 @Data
